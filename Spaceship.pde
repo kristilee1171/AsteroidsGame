@@ -1,15 +1,18 @@
 class Spaceship extends Floater  
-{   
-  public Spaceship()
+{ 
+  public Spaceship() //set&get
+  {
+  }
+  public Spaceship() //show?
   {
     corners = 3;
     xCorners = new int[corners];
     yCorners = new int[corners];
-    xCorners[0] = 
-    yCorners[0] =
-    xCorners[1] = 
-    yCorners[1] =
-    xCorners[2] = 
-    yCorners[2] = 
+    xCorners[0] = -8;
+    yCorners[0] = -8;
+    xCorners[1] = 16;
+    yCorners[1] = 0;
+    xCorners[2] = -8;
+    yCorners[2] = 8;
   }
 }
