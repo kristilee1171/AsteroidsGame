@@ -34,7 +34,6 @@ class Spaceship extends Floater
       myCenterY = height;
     } 
   }
-  
   public void setX(int x) {myCenterX = x;}
   public int getX() {return (int) myCenterX;}
   public void setY(int y) {myCenterY = y;}
