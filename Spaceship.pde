@@ -34,6 +34,16 @@ class Spaceship extends Floater
       myCenterY = height;
     } 
   }
+  public void accelerate (double dAmount)
+{  
+    double dRadians =myPointDirection*(Math.PI/180);
+    myDirectionX += ((dAmount) * Math.cos(dRadians));
+    myDirectionY += ((dAmount) * Math.sin(dRadians));    
+}
+void turn(int nDegreesOfRotation)
+{
+   myPointDirection+=nDegreesOfRotation;
+}
   public void setX(int x) {myCenterX = x;}
   public int getX() {return (int) myCenterX;}
   public void setY(int y) {myCenterY = y;}
