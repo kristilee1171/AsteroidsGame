@@ -5,10 +5,11 @@ public void setup() {
   one = new Spaceship();
 }
 public void draw() {
+  background(0);
   one.show();
+  one.move();
 }
 public void keyPressed(){
-  background(0);
   if(key == CODED){
     if(keyCode == LEFT){
       one.turn(-10);
