@@ -1,21 +1,31 @@
 Spaceship one;
 Star s [];
+Asteroid a[];
 public void setup() {
   size(500,500);
   background(0);
   one = new Spaceship();
   s = new Star[200];
+  a = new Asteroid[20];
   for(int i = 0; i < s.length; i++){
     s[i] = new Star();
+  }
+  for(int i = 0; i < a.length; i++){
+    a[i] = new Asteroid();
   }
 }
 public void draw() {
   background(0);
-  one.show();
-  one.move();
+  
   for(int i = 0; i < s.length; i++){
     s[i].show();
   }
+  for(int i = 0; i < a.length; i++){
+    a[i].show();
+    a[i].move();
+  }
+  one.show();
+  one.move();
 }
 public void keyPressed(){
   if(key == CODED){
